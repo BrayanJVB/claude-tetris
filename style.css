@@ -133,8 +133,46 @@ kbd {
   color: #7aa2f7;
 }
 
-#restart-btn {
-  margin-top: 8px;
+.overlay-box .hidden,
+.overlay-box.game-over .pause-only {
+  display: none;
+}
+
+.overlay-controls {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 12px;
+  color: #aaa;
+  text-align: left;
+}
+
+.overlay-controls li {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.level-select {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: #888;
+}
+
+.level-select select {
+  background: #22223a;
+  color: #e0e0e0;
+  border: 1px solid #3a3a5a;
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-size: 13px;
+}
+
+.menu-btn {
+  min-width: 160px;
   background: #7aa2f7;
   color: #0f0f17;
   border: none;
@@ -147,6 +185,22 @@ kbd {
   transition: background 0.15s;
 }
 
-#restart-btn:hover {
+.menu-btn:hover {
   background: #9bbdff;
+}
+
+.menu-btn.secondary {
+  background: #22223a;
+  color: #e0e0e0;
+  border: 1px solid #3a3a5a;
+}
+
+.menu-btn.secondary:hover {
+  background: #2d2d4a;
+}
+
+.menu-btn:focus-visible,
+.level-select select:focus-visible {
+  outline: 2px solid #9bbdff;
+  outline-offset: 2px;
 }
