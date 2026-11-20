@@ -70,6 +70,37 @@ body {
   border-radius: 4px;
 }
 
+/* ---- Skins ---- */
+#skin-select {
+  background: #22223a;
+  color: #e0e0e0;
+  border: 1px solid #3a3a5a;
+  border-radius: 4px;
+  padding: 4px 6px;
+  font-size: 12px;
+  font-family: inherit;
+}
+
+body.skin-neon #board,
+body.skin-neon #next-canvas {
+  background: #000;
+  border-color: rgba(0, 240, 255, 0.35);
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.25);
+}
+
+body.skin-pastel #board,
+body.skin-pastel #next-canvas {
+  background: #faf5ff;
+  border-color: #d9c8e8;
+}
+
+body.skin-pixel #board,
+body.skin-pixel #next-canvas {
+  background: #101018;
+  border-color: #4a4a6a;
+  border-radius: 0;
+}
+
 /* ---- Controles ---- */
 .controls ul {
   list-style: none;
